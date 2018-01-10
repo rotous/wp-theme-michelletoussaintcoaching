@@ -1,0 +1,442 @@
+/*
+ Theme Name:   Michelle Toussaint Coaching Wordpress Theme
+ Theme URI:    https://www.michelletoussaintcoaching.nl/
+ Description:  Wordpress theme for michelletoussaintcoaching.nl, based on Zerif Lite
+ Author:       Ronald Toussaint
+ Author URI:   https://www.ronaldtoussaint.nl/
+ Template:     zerif-lite
+ Version:      0.0.1
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags: one-column, two-columns, right-sidebar,full-width-template,rtl-language-support,sticky-post,theme-options, custom-background, custom-menu, editor-style, featured-images, threaded-comments, translation-ready, footer-widgets, portfolio, e-commerce, blog
+ Text Domain:  michelletoussaintcoaching
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day|Courgette|Raleway:400,400i,700,700i&amp;subset=latin-ext');
+
+
+#loader .loader-icon,
+.status {
+  background: url(https://www.michelletoussaintcoaching.nl/website/wp-content/themes/zerif-lite/images/loading_blue.gif) no-repeat center center;
+}
+
+body {
+  font-family: 'Raleway', sans-serif !important;
+}
+
+h1, h2 {
+  font-family: 'Courgette', cursive;
+  text-transform: none !important;
+  font-weight: normal;
+}
+
+/******************************
+  MENU
+*******************************/
+#main-nav {
+  background-color: white;
+  border-bottom: 10px solid #80b38a;
+  position: fixed !important;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #80b38a;
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  color: #699371;
+}
+ul.nav > li.current > a:before, .page ul.nav > li.current-menu-item > a:before, .single-post ul.nav > li.current-menu-item > a:before, .archive ul.nav > li.current-menu-item > a:before {
+  background: white;
+}
+
+.navbar-inverse .navbar-nav ul.sub-menu li:hover > a, .navbar-inverse .navbar-nav ul.sub-menu li.link-focus > a {
+  color: #80b38a;
+}
+
+#main-nav .current-menu-item {
+    font-weight: bold;
+    border-bottom: 4px solid #80b38a;
+    box-sizing: border-box;
+}
+#main-nav .current-menu-item .sub-menu {
+    font-weight: normal;
+}
+#main-nav .current-page-parent {
+    font-weight: bold;
+}
+.navbar-toggle.active {
+    background-color: #80b38a !important;
+}
+@media (max-width: 767px){
+    .nav .has_children > a:after {
+        display: none;
+    }
+
+    .dropdownmenu {
+        background-color: #80b38a !important;
+    }
+}
+@media (max-width: 767px){
+  .this-open > a {
+    color: #80b38a !important;
+  }
+}
+a,
+.nav-links a,
+a:visited {
+    color: #80b38a;
+}
+a:hover {
+  color: #699371;
+}
+.header-content-wrap {
+  background: none;
+}
+
+/******************************
+  Front page
+*******************************/
+
+.intro-text {
+  text-align: left;
+}
+@media (max-width: 767px){
+    .intro-text {
+        margin-top: 130px;
+    }
+    .intro-text span {
+        font-size: 18px;
+        line-height: 1.5em;
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
+
+.buttons {
+  text-align: left;
+}
+.custom-button {
+  margin-left: 0;
+  margin-top: 0;
+}
+.green-btn {
+    background: #80b38a;
+}
+.green-btn:hover,
+.btn-primary.green-btn:active {
+    background: #699371;
+}
+.red-btn,
+.btn-primary:active,
+.btn-primary:focus {
+  background: #eeb70d;
+}
+.red-btn:hover,
+.pirate_forms .pirate-forms-submit-button:hover {
+  background: #cb9c0b;
+}
+
+#focus .section-header {
+    display: none;
+}
+#focus span:nth-child(4n+1) .focus-box .service-icon:hover, #focus span:nth-child(4n+1) .focus-box .service-icon:focus {
+    border: 10px solid rgba(56, 142, 194, 0.6);
+}
+#focus span:nth-child(4n+1) .focus-box .red-border-bottom:before {
+    background: rgba(56, 142, 194, 0.6);
+}
+#focus span:nth-child(4n+2) .focus-box .service-icon:hover, #focus span:nth-child(4n+2) .focus-box .service-icon:focus {
+    border-color: #80b38a;
+}
+#focus span:nth-child(4n+2) .focus-box .red-border-bottom:before {
+    background: #80b38a;
+}
+#focus span:nth-child(4n+3) .focus-box .service-icon:hover, #focus span:nth-child(4n+3) .focus-box .service-icon:focus {
+    border-color: #eeb70d;
+}
+#focus span:nth-child(4n+3) .focus-box .red-border-bottom:before {
+    background: #eeb70d;
+}
+
+.about-us .section-header {
+    padding-bottom: 20px;
+}
+.about-us .our-clients {
+    display: none;
+}
+
+.about-us .section-header .section-legend {
+  font-family: 'Courgette', cursive;
+  font-weight: normal;
+  font-size: 45px;
+}
+
+.latest-news .section-header {
+}
+
+.feedback-box .client-info .client-name,
+.testimonial .widget_zerif_testim-widget .client-name {
+    min-height: 20px;
+    display: inline-block;
+}
+.testimonial {
+    background: #80b38a;
+}
+.testimonial .red-text {
+    color: #eeb70d;
+}
+
+.client-list div img {
+  max-width: none;
+}
+
+.zerif-copyright-box {
+  display: none;
+}
+
+#team .section-header {
+    display: none;
+}
+#team{
+  background: rgba(238,183,13,0.8);
+  color: white;
+  font-size: 3rem;
+  font-style: italic;
+}
+#team a {
+    color: #699371;
+}
+#team a:hover {
+    text-decoration: underline;
+}
+.t-handwriting {
+  font-family: 'Dawning of a New Day', cursive;
+  font-size: 300%;
+}
+
+/*************************
+ FOOTER
+**************************/
+.company-details a {
+    color: #80b38a;
+}
+.company-details a:hover {
+    color: #699371;
+}
+/*************************
+ SUBPAGES
+**************************/
+body:not(.home) .site-content,
+.page-template-template-fullwidth:not(.home) .site-content {
+    background: rgba(128, 179, 138, 0.8);
+}
+.site-content.mtc-yellow-page {
+    background: rgba(238,183,13,0.7);
+}
+.site-content.mtc-blue-page {
+    background: rgba(56, 142, 194, 0.3);
+}
+
+.mtc-featured-image {
+    max-height: 350px;
+    overflow: hidden;
+    margin-bottom: -60px;
+}
+@media (max-width: 767px){
+    .mtc-featured-image {
+        max-height: 350px;
+    }
+}
+.mtc-featured-image img {
+    width: 100%;
+}
+.entry-title {
+    color: white;
+    background: rgba(0,0,0,0.5);
+    display: inline-block;
+    padding: 25px;
+    font-size: 4rem;
+}
+.entry-title:before,
+.entry-title:after {
+    display: none;
+}
+.mtc-with-featured-image .entry-title {
+    margin-left: 10px;
+}
+
+@media (max-width: 767px){
+    .mtc-featured-image {
+        margin-bottom: -30px;
+    }
+    .entry-title {
+        padding: 10px 10px;
+        font-size: 2.8rem;
+    }
+}
+
+.entry-title:before,
+.entry-title:after {
+  background: #80b38a;
+}
+.entry-title a:hover {
+  color: #699371;
+}
+
+.entry-content {
+    max-width: 800px;
+}
+.entry-content h3 {
+  padding: 1em 0 0.5em;
+}
+
+article a,
+article .entry-meta a,
+.entry-content a,
+.entry-content a:visited {
+    color: white;
+}
+article a:hover,
+article .entry-meta a:hover,
+.entry-content a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+article.hentry {
+    border: none;
+}
+
+.entry-content ol li {
+  padding-bottom: 0.5em;
+}
+.entry-content ol li p {
+  padding-bottom: 0.5em;
+  margin-bottom: 0;
+}
+.entry-content ol li p:last-child {
+  padding-bottom: 0;
+}
+.entry-content blockquote {
+    margin: 1em -9999rem;
+    padding: 1em 9999rem;
+    background: rgba(0, 0, 0, 0.3);
+    color: rgba(255,255,255,0.9);
+    font-style: italic;
+    display: block;
+    font-size: 1.4em;
+    line-height: 1.4em;
+}
+.entry-content blockquote p {
+    max-width: 400px;
+    margin-left: 200px;
+    text-align: left;
+}
+
+@media (max-width: 767px){
+    .entry-content blockquote {
+        font-size: 1.2em;
+    }
+    .entry-content blockquote p {
+        max-width: 200px;
+        margin-left: 20px;
+    }
+}
+
+table,
+th,
+td {
+    border-color: rgba(255,255,255, 0.3);
+}
+
+@media (max-width: 767px){
+    ul, ol {
+        margin: 0 0 1.5em 1em;
+    }
+}
+
+.site-content {
+  overflow-x: hidden;
+}
+
+/*************************
+ CONTACT PAGE
+**************************/
+.contact-table td {
+  vertical-align: top;
+  padding: 0;
+}
+.contact-table td:first-child {
+  padding-right: 2em;
+}
+.contact-table td p {
+  float: left;
+}
+@media (max-width: 767px){
+  .contact-table td:last-child {
+    display: none;
+  }
+}
+
+/*************************
+ CONTACT PAGE
+**************************/
+#mtc-map {
+    height: 400px;
+}
+.mtc-maps-infowindow {
+    padding: 10px;
+    padding-left: 80px;
+    background: url(images/michelle-logo-opt.svg) no-repeat left center;
+    background-size: 70px;
+    text-align: left;
+}
+.page-template-template-contact-page .entry-content {
+    max-width: none;
+}
+.page-template-template-contact-page .mtc-col-left {
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 3em;
+    float: left;
+}
+.page-template-template-contact-page .mtc-col-right {
+    width: 50%;
+    float: right;
+    margin-top: 100px;
+}
+.page-template-template-contact-page #mtc-route-planner {
+    padding-top: 30px;
+}
+@media (max-width: 767px){
+    .page-template-template-contact-page .mtc-col-left {
+        width: 100%;
+        float: none;
+        padding-right: 0;
+    }
+    .page-template-template-contact-page .mtc-col-right {
+        width: 100%;
+        float: none;
+        clear: both;
+    }
+}
+/*************************
+ 404 PAGE
+**************************/
+/*
+.error404 .site-content {
+    background: rgba(128, 179, 138, 0.8);
+}
+*/
+.error404 .entry-content {
+    max-width: none;
+}
+.error404 .focus {
+    padding-top: 0;
+}
+
+/**************************
+  WIDGETS
+***************************/
+.widget .widget-title:before {
+  background-color: #80b38a;
+}
